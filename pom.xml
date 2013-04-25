@@ -5,7 +5,7 @@
 
     <groupId>org.celllife.maven</groupId>
     <artifactId>celllife-maven-webapp-archetype</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>celllife-maven-archetype</name>
