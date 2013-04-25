@@ -35,6 +35,23 @@
         </pluginManagement>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>celllife-releases</id>
+            <url>https://www.cell-life.org/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>celllife-snapshots</id>
+            <url>https://www.cell-life.org/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <connection>git@git.cell-life.org:celllife-maven-webapp-archetype.git</connection>
+        <developerConnection>git@git.cell-life.org:celllife-maven-webapp-archetype.git</developerConnection>
+        <url>https://www.cell-life.org/gitlab/celllife-maven-webapp-archetype</url>
+    </scm>
+
     <dependencyManagement>
 
         <dependencies>
