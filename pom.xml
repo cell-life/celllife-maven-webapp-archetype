@@ -43,8 +43,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>git@git.cell-life.org:celllife-maven-webapp-archetype.git</connection>
-        <developerConnection>git@git.cell-life.org:celllife-maven-webapp-archetype.git</developerConnection>
+        <connection>scm:git:git@git.cell-life.org:celllife-maven-webapp-archetype.git</connection>
+        <developerConnection>scm:git:git@git.cell-life.org:celllife-maven-webapp-archetype.git</developerConnection>
         <url>https://www.cell-life.org/gitlab/celllife-maven-webapp-archetype</url>
     </scm>
 
