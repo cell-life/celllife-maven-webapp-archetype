@@ -1,0 +1,27 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <bean id="ldapContextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+        <property name="url" value="${symbol_dollar}{ldap.url}"/>
+        <property name="userDn" value="${symbol_dollar}{ldap.manager.dn}"/>
+        <property name="password" value="${symbol_dollar}{ldap.manager.password}"/>
+        <property name="base" value="${symbol_dollar}{ldap.root}"/>
+        <property name="pooled" value="${symbol_dollar}{ldap.pooled}"/>
+    </bean>
+
+    <security:ldap-user-service id="ldapUserDetailsService"
+                                server-ref="ldapContextSource"
+                                user-search-base="${symbol_dollar}{ldap.user.search.base}"
+                                user-search-filter="${symbol_dollar}{ldap.user.search.filter}"
+                                group-search-base="${symbol_dollar}{ldap.group.search.base}"
+                                group-search-filter="${symbol_dollar}{ldap.group.search.filter}"
+                                role-prefix="${symbol_dollar}{ldap.role.prefix}"/>
+
+</beans>
