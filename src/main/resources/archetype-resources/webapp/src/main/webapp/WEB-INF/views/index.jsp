@@ -9,27 +9,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>OHSC</title>
+    <title>TITLE</title>
 
     <c:set var="url">${symbol_dollar}{pageContext.request.requestURL}</c:set>
     <base href="${symbol_dollar}{fn:substring(url, 0, fn:length(url) - fn:length(pageContext.request.requestURI))}${symbol_dollar}{pageContext.request.contextPath}/" />
 
     <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <style type="text/css">
-        body {
-            padding-top: 20px;
-            padding-bottom: 40px;
-            font: 10px sans-serif;
-        }
-
-        svg {
-            padding: 10px 0 0 10px;
-        }
-
-        .arc {
-            stroke: ${symbol_pound}fff;
-        }
-    </style>
     <link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
@@ -38,12 +23,12 @@
 
     <div class="masthead">
         <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="reports/provinces?country=za South Africa (National Government)">Home</a></li>
+            <li class="active"><a href="${symbol_pound}">Home</a></li>
             <li><a href="${symbol_pound}">About</a></li>
             <li><a href="${symbol_pound}">Contact</a></li>
             <li><a href="j_spring_cas_security_logout">Logout</a>
         </ul>
-        <h3 class="muted">OHSC</h3>
+        <h3 class="muted">HEADING</h3>
     </div>
 
     <hr>
@@ -52,22 +37,10 @@
 
     <p>
     <ul>
-        <li><a href="reports/provinces?country=za South Africa (National Government)">Aggregated national ratings report</a></li>
         <li>Future Report Here</li>
         <li>Future Report Here</li>
     </ul>
     </p>
-
-    <hr>
-
-    <center>
-        <h3>Total Clinics Monitored</h3>
-
-			<div class="row-fluid" id="donut"> </div>
-			<script src="http://d3js.org/d3.v3.min.js"></script>
-			<script src="resources/js/donut-graphs.js"></script>
-			
-		</center>
 
     <hr>
 
