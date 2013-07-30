@@ -32,7 +32,7 @@
                    use-expressions="true">
 
         <security:intercept-url pattern="/**" access="isAuthenticated()"/>
-        <security:intercept-url pattern="/**" access="hasRole('ROLE_${appId.uppercase()}')" />
+        <security:intercept-url pattern="/**" access="hasRole('ROLE_${appId.toUpperCase()}')" />
 
         <security:custom-filter position="CAS_FILTER" ref="casFilter"/>
 
