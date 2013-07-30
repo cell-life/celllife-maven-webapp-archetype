@@ -12,7 +12,7 @@ import groovyx.net.http.*
  */
 class REST {
 
-    static String contextPath = "/bla"
+    static String contextPath = "/${appId}"
 
     static String baseUrl = "http://localhost:9000"
 

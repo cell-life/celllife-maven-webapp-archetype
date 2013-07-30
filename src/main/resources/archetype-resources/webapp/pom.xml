@@ -159,7 +159,7 @@
                     <stopKey>STOP</stopKey>
                     <stopPort>9001</stopPort>
                     <webAppConfig>
-                        <contextPath>/bla</contextPath>
+                        <contextPath>/${appId}</contextPath>
                     </webAppConfig>
                     <connectors>
                         <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
