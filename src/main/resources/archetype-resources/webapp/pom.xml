@@ -14,7 +14,7 @@
     <version>${version}</version>
     <packaging>war</packaging>
 
-    <name>${artifactId}-webapp</name>
+    <name>${artifactId}</name>
 
     <properties>
         <jetty.daemon>true</jetty.daemon>
