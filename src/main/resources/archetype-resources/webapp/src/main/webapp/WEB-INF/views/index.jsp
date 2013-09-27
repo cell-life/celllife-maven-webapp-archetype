@@ -14,8 +14,8 @@
     <c:set var="url">${symbol_dollar}{pageContext.request.requestURL}</c:set>
     <base href="${symbol_dollar}{fn:substring(url, 0, fn:length(url) - fn:length(pageContext.request.requestURI))}${symbol_dollar}{pageContext.request.contextPath}/" />
 
-    <link href="resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="resources/css/bootstrap-3.0.0.min.css" rel="stylesheet" media="screen">
+    <link href="resources/css/bootstrap-responsive.min.css" rel="stylesheet">
 </head>
 <body>
 
