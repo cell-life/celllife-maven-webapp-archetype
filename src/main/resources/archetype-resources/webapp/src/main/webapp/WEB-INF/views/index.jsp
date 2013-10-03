@@ -28,6 +28,7 @@
             <li><a href="${symbol_pound}">Contact</a></li>
             <li><a href="j_spring_cas_security_logout">Logout</a>
         </ul>
+         <h2><img src="resources/img/logo.png"></h2>
         <h3 class="muted">HEADING</h3>
     </div>
 
