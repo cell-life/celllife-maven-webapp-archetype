@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.interfaces.web.error;
+package ${package}.framework.interfaces.web.error;
 
 import java.text.MessageFormat;
 

@@ -12,6 +12,7 @@
     <mvc:annotation-driven/>
 
     <!--Tell the servlet where to look for annotated methods-->
+    <context:component-scan base-package="${package}.framework.interfaces.web"/>
     <context:component-scan base-package="${package}.interfaces.web"/>
     <context:component-scan base-package="${package}.interfaces.service"/>
 
