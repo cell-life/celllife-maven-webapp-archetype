@@ -14,8 +14,8 @@
     <c:set var="url">${symbol_dollar}{pageContext.request.requestURL}</c:set>
     <base href="${symbol_dollar}{fn:substring(url, 0, fn:length(url) - fn:length(pageContext.request.requestURI))}${symbol_dollar}{pageContext.request.contextPath}/" />
 
-    <link href="resources/css/bootstrap-3.0.0.min.css" rel="stylesheet" media="screen">
-    <link href="resources/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="resources/css/bootstrap-3.0.2.css" rel="stylesheet" media="screen">
+    <link href="resources/css/bootstrap-theme-3.0.2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -23,9 +23,7 @@
 
     <div class="masthead">
         <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="${symbol_pound}">Home</a></li>
-            <li><a href="${symbol_pound}">About</a></li>
-            <li><a href="${symbol_pound}">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="j_spring_cas_security_logout">Logout</a>
         </ul>
          <h2><img src="resources/img/logo.png"></h2>
