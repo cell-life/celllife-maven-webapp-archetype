@@ -6,13 +6,8 @@ package ${package}.test;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
-/**
- * User: Kevin W. Sewell
- * Date: 2013-03-18
- * Time: 10h32
- */
-@Configuration
-@ImportResource({
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration({
         "classpath:/META-INF/spring/spring-aop.xml",
         "classpath:/META-INF/spring/spring-application.xml",
         "classpath:/META-INF/spring/spring-cache.xml",
@@ -20,14 +15,13 @@ import org.springframework.context.annotation.ImportResource;
         "classpath:/META-INF/spring/spring-domain.xml",
         "classpath:/META-INF/spring/spring-dozer.xml",
         "classpath:/META-INF/spring/spring-smooks.xml",
-        "classpath:/META-INF/spring/spring-integration-cqm.xml",
-        "classpath:/META-INF/spring/spring-integration-dhis.xml",
         "classpath:/META-INF/spring/spring-jdbc.xml",
         "classpath:/META-INF/spring/spring-json.xml",
         "classpath:/META-INF/spring/spring-orm.xml",
         "classpath:/META-INF/spring/spring-task.xml",
         "classpath:/META-INF/spring/spring-tx.xml",
-        "classpath:/META-INF/spring-data/spring-data-jpa.xml"
+        "classpath:/META-INF/spring-data/spring-data-jpa.xml",
 })
+@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
 public class TestConfiguration {
 }
