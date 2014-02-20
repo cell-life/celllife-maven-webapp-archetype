@@ -6,7 +6,6 @@ package ${package}.test;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
-@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({
         "classpath:/META-INF/spring/spring-aop.xml",
         "classpath:/META-INF/spring/spring-application.xml",
