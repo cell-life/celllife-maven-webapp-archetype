@@ -25,6 +25,12 @@
         <include>**/*.sh</include>
       </includes>
     </fileSet>
+      <fileSet>
+          <directory></directory>
+          <includes>
+              <include>.gitignore</include>
+          </includes>
+      </fileSet>
   </fileSets>
   <modules>
     <module id="${artifactId}" dir="webapp" name="${artifactId}">
