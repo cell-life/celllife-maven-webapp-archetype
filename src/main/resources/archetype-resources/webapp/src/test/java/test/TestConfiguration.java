@@ -3,8 +3,8 @@
 #set( $symbol_escape = '\' )
 package ${package}.test;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.transaction.TransactionConfiguration;
 
 @ContextConfiguration({
         "classpath:/META-INF/spring/spring-aop.xml",
