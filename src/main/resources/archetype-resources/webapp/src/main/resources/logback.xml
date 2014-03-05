@@ -26,9 +26,7 @@
 
     <!-- Cell-Life -->
 
-    <logger name="org.celllife" level="TRACE">
-    	<appender-ref ref="FILE" />
-    </logger>
+    <logger name="org.celllife" level="WARN" />
 
     <!-- Hibernate -->
 
