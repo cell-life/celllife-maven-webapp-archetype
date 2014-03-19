@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>TITLE</title>
+    <title>${appId}</title>
 
     <c:set var="url">${symbol_dollar}{pageContext.request.requestURL}</c:set>
     <base href="${symbol_dollar}{fn:substring(url, 0, fn:length(url) - fn:length(pageContext.request.requestURI))}${symbol_dollar}{pageContext.request.contextPath}/" />
@@ -27,7 +27,7 @@
             <li><a href="j_spring_cas_security_logout">Logout</a>
         </ul>
          <h2><img src="resources/img/logo.png"></h2>
-        <h3 class="muted">HEADING</h3>
+        <h3 class="muted">${appId}</h3>
     </div>
 
     <hr>
