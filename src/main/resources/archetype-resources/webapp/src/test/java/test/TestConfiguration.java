@@ -5,6 +5,7 @@ package ${package}.test;
 
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.transaction.TransactionConfiguration;
+import org.junit.runner.RunWith;
 
 @ContextConfiguration({
         "classpath:/META-INF/spring/spring-aop.xml",
