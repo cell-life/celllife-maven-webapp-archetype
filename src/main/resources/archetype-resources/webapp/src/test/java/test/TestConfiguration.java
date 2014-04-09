@@ -5,8 +5,6 @@ package ${package}.test;
 
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.transaction.TransactionConfiguration;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @ContextConfiguration({
         "classpath:/META-INF/spring/spring-aop.xml",
@@ -24,6 +22,5 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
         "classpath:/META-INF/spring-data/spring-data-jpa.xml",
 })
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
-@RunWith(SpringJUnit4ClassRunner.class)
 public class TestConfiguration {
 }
