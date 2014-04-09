@@ -22,5 +22,6 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
         "classpath:/META-INF/spring-data/spring-data-jpa.xml",
 })
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
+@RunWith(SpringJUnit4ClassRunner.class)
 public class TestConfiguration {
 }
